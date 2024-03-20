@@ -1,0 +1,72 @@
+/* ----------------- */
+/* styles.css  */
+/* ----------------- */
+
+/* The background color will be pink  (gray-#b0c4de)  */
+body {text-align: center;
+	background-color:rgb(169, 222, 226);
+	font-family: Ariel;
+}
+
+/* Define a special style for the titles */
+h1 {color: #008080;}
+
+h2 {
+    color: #a3872c;
+    text-align: center;
+    margin-top: 0;
+}
+p {
+    color: #777;
+    text-align: center;
+}
+.special{background-color: #008080;}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"], input[type="submit"] {
+    width: 200px;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color:rgb(169, 222, 226);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.image-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.small-image {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head><link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'style.css') }}"></head>
+
+<body class = container> 
+    
+<h1> hi {{username}}, how you enjoyed the app </h1>
+<h2> you have {{current_tokens}} tokens left</h2>
+ 
+{% if flag == true%} <!-- if the flag is true, then the group of numbers you entered is an exact cover  -->
+<h3> the finale result: it is an EXACT COVER 
+</h3> 
+<h4> exact cover sub- groups are  {{message2}} when the group of numbers you entered:{{a}}
+</h4>
+ <img class = small-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUznZuLamCHYEQnFaHrlm01qJPmNiarxuzg&usqp=CAU" alt="Description of the image">
+{%else%}    <!-- else, its not exact cover  -->
+<h3> The group of numbers you entered:{{a}} but unfortunately there is no exact cover.</h3>
+
+{%endif%}     
+<br>
+
+
+<a href="/">click to return</a>
+<div class="image-container">
+    
+</div>
+
+</body> 
+
+</html>

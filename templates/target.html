@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'style.css') }}"></head>
+<body> 
+    <h1> Welcome to our EXACT COVER game page, {{name}}! </h1>
+    
+    <br>
+
+   {% if current_tokens >=1 %}       <!-- we show the form for the "exact cover game" only if the user have enough tokens  -->
+  
+   <h2>You have {{current_tokens}} game tokens left, use them wisely! </h2>
+    <form action="/result_page" method="POST">
+        <input type="text" name="group" placeholder="Group" required >
+        <input type="text" name="sub_group" placeholder="Sub-Group" required >
+        <br>
+        <input type="submit" name="Register" class="button">
+    </form>
+   {% else %}
+    <h2> You have no more tokens left, please log out. </h2>
+   {% endif %}  <!--closing the if statment  -->
+
+<br>
+    
+    <a href="/logout" class="button">Logout</a>
+</body> 
+</html>
